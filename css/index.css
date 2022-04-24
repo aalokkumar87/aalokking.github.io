@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(to left, #fff 85%, #c3f5ff 15%);
+}
+
+.section{
+	width: 100%;
+	height: 20vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-image: linear-gradient(to top, #fff 85%, #c3f5ff 15%);
+}
+
+.logo{
+	width: 30%;
+	color: white;
+	background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+	padding-left: 100px;
+	box-sizing: border-box;
+}
+.logo h1{
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	animation: leftright 2s linear infinite;
+	animation-direction: alternate;
+}
+
+@keyframes leftright{
+	from{ padding-left: 80px;}
+	to { padding-right: 80px;}
+}
+
+nav{
+	width: 60%;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 17px;
+	color: #000;
+	position: relative;
+}
+
+nav a:first-child{
+    color: #4458dc;
+}
+
+nav a:before{
+	content: "";
+	position: absolute;
+	top: 110%;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	border-bottom: 2px solid #4458dc;
+	transition: all 0.4s linear;
+}
+nav a:hover:before{
+	width: 100%;
+}
+
+main{
+	height: 80vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.right{
+	border-radius: 61% 39% 61% 39% / 70% 34% 66% 30%;
+	background-color: #e8fbff;
+}
+.right img{
+	max-height: 400px;
+	height: auto;
+}
+.left{
+	text-transform: uppercase;
+	color: #000;
+}
+.left h3{
+	font-size: 40px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.left h3:after{
+	content: "";
+	width: 450px;
+	height: 3px;
+	left: 28%;
+	top: 50%;
+
+	background-color: black;
+	position: absolute;
+}
+
+.left h2{
+    font-size: 70px;
+    margin-top: 20px;
+    margin.-bottom: 35px;
+}
+
+.left h1{
+	font-size: 20px;
+	margin-bottom: 50px;
+	word-spacing: 4px;
+	margin-top: 15px;
+}
+
+.left a{
+	text-decoration: none;
+	font-weight: 900;
+	font-size: 14px;
+	padding: 12px 25px;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #fff;
+	margin-right: 50px;
+	border-radius: 10px;
+	letter-spacing: 0;
+	border: double 2px transparent;
+	box-shadow: 0 10px 30px rgba(118, 85, 225, 3);
+	background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left,#4458dc,#854fee);
+}
+
+.left a:hover{
+	background: white;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
